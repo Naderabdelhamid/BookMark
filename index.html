@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/book-bookmark-solid-full.svg" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h1>bookmarker</h1>
+        <hr />
+        <h2 class="pt-2 pb-4 text-center fs-4">
+          <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <div>
+          <div class="mb-3">
+            <i class="fa-solid fa-book-bookmark"></i>
+            <label for="bookmarkName" class="form-label ps-2">Site Name</label>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="bookmarkName"
+                placeholder=""
+                pattern=".{3,}"
+                required
+              />
+              <label for="bookmarkName">Bookmark Name</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <i class="fa-solid fa-link"></i>
+            <label for="urlLink" class="form-label ps-2">Website URL</label>
+            <div class="form-floating">
+              <input
+                type="url"
+                class="form-control"
+                id="urlLink"
+                placeholder=""
+                pattern="https?://.+"
+                required
+              />
+              <label for="urlLink">Website URL</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button id="addBtn" class="btn btn-warning ps-5 pe-5">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container my-4">
+        <table class="table table-bordered table-hover text-center">
+          <thead class="table-light">
+            <tr>
+              <th scope="col">Index</th>
+              <th scope="col">Website Name</th>
+              <th scope="col">Visit</th>
+              <th scope="col">Delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/nader.abd.el.hameed.2025/"
+                title="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://github.com/Naderabdelhamid" title="github"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nader_abd_el_hameed"
+                title="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nader-abdelhamid-mohamed-10267a277/"
+                title="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <div class="copyright">
+              <p>Created by Nader &copy; 2025. Have a nice day!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
