@@ -83,3 +83,23 @@ function deleteBookmark(index) {
   localStorage.setItem("bookmarks", JSON.stringify(urlList));
   displayData();
 }
+
+bookmarkNameInput.addEventListener("focus", function () {
+  this.removeAttribute("placeholder");
+});
+
+urlLinkInput.addEventListener("focus", function () {
+  this.removeAttribute("placeholder");
+});
+
+bookmarkNameInput.addEventListener("blur", function () {
+  if (this.value === "") {
+    this.setAttribute("placeholder", "Bookmark Name");
+  }
+});
+
+urlLinkInput.addEventListener("blur", function () {
+  if (this.value === "") {
+    this.setAttribute("placeholder", "Website URL");
+  }
+});

@@ -29,46 +29,49 @@
         </h2>
         <div>
           <div class="mb-3">
-            <i class="fa-solid fa-book-bookmark"></i>
-            <label for="bookmarkName" class="form-label ps-2">Site Name</label>
-            <div class="form-floating">
+            <i class="fa-solid fa-book-bookmark text-warning"></i>
+            <label for="bookmarkName" class="form-label fw-bold"
+              >Site Name :</label
+            >
+            <div class="">
               <input
                 type="text"
                 class="form-control"
                 id="bookmarkName"
-                placeholder=""
+                placeholder="Bookmark Name"
                 pattern=".{3,}"
                 required
               />
-              <label for="bookmarkName">Bookmark Name</label>
             </div>
           </div>
 
           <div class="mb-3">
-            <i class="fa-solid fa-link"></i>
-            <label for="urlLink" class="form-label ps-2">Website URL</label>
-            <div class="form-floating">
+            <i class="fa-solid fa-link text-warning"></i>
+            <label for="urlLink" class="form-label fw-bold"
+              >Website URL :</label
+            >
+            <div class="">
               <input
                 type="url"
                 class="form-control"
                 id="urlLink"
-                placeholder=""
+                placeholder="Website URL"
                 pattern="https?://.+"
                 required
               />
-              <label for="urlLink">Website URL</label>
             </div>
           </div>
         </div>
 
         <div class="text-center">
           <button id="addBtn" class="btn btn-warning ps-5 pe-5">Submit</button>
-        </div>
+        </div >
       </div>
     </section>
 
     <section>
       <div class="container my-4">
+       
         <table class="table table-bordered table-hover text-center">
           <thead class="table-light">
             <tr>
@@ -79,8 +82,7 @@
             </tr>
           </thead>
           <tbody></tbody>
-        </table>
-      </div>
+        </table>     
     </section>
     <footer class="footer">
       <div class="footer-container">
